@@ -91,4 +91,48 @@
         android:text="Bottom end parent"
         android:textColor="#fff" />
 
+    <TextView
+        android:id="@+id/topStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/startView"
+        android:layout_alignTop="@id/topView"
+        android:background="#E91E63"
+        android:padding="10dp"
+        android:text="Top start"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/topEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/endView"
+        android:layout_alignTop="@id/topView"
+        android:background="#E91E63"
+        android:padding="10dp"
+        android:text="Top end"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/bottomStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/startView"
+        android:layout_alignBottom="@id/bottomView"
+        android:background="#E91E63"
+        android:padding="10dp"
+        android:text="Bottom start"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/bottomEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/endView"
+        android:layout_alignBottom="@id/bottomView"
+        android:background="#E91E63"
+        android:padding="10dp"
+        android:text="Bottom end"
+        android:textColor="#fff" />
+
 </RelativeLayout>
