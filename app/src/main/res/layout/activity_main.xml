@@ -50,4 +50,45 @@
         android:layout_marginStart="10dp"
         android:layout_toEndOf="@+id/centerButton"
         android:background="#ff88ff" />
+
+    <TextView
+        android:id="@+id/parentTopStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:padding="10dp"
+        android:text="Top start parent"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/parentTopEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="#4CAF50"
+        android:padding="10dp"
+        android:text="Top end parent"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/parentBottomStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#4CAF50"
+        android:padding="10dp"
+        android:text="Bottom start parent"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/parentBottomEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="#4CAF50"
+        android:padding="10dp"
+        android:text="Bottom end parent"
+        android:textColor="#fff" />
+
 </RelativeLayout>
