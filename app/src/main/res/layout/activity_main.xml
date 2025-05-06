@@ -135,4 +135,103 @@
         android:text="Bottom end"
         android:textColor="#fff" />
 
+    <!-- Элемент между двумя другими -->
+    <TextView
+        android:id="@+id/betweenTwoViews"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_toStartOf="@id/parentTopEnd"
+        android:layout_toEndOf="@id/parentTopStart"
+        android:background="#FF5722"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Between two views"
+        android:textColor="#fff" />
+
+    <!-- Элемент с двухсторонней привязкой по вертикали -->
+    <TextView
+        android:id="@+id/betweenTwoViewsVertically"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_above="@id/bottomEnd"
+        android:layout_below="@id/topEnd"
+        android:layout_alignParentEnd="true"
+        android:background="#FF5722"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="V\ne\nr\nt\ni\nc\na\nl"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/fromStartOfOneToEndOfAnother"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/topView"
+        android:layout_alignStart="@id/topStart"
+        android:layout_alignEnd="@id/topEnd"
+        android:layout_marginBottom="40dp"
+        android:background="#009688"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="From start of one view to end of another"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/fromTopOfOneToBottomOfAnother"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_alignTop="@id/fromStartOfOneToEndOfAnother"
+        android:layout_alignBottom="@id/bottomStart"
+        android:layout_alignParentStart="true"
+        android:background="#009688"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="F\nr\no\nm\n \nt\no\np\n \nt\no\n \nb\no\nt\nt\no\nm\n "
+        android:textColor="#fff" />
+
+    <!-- Контейнер растянут между нужными view -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/parentBottomStart"
+        android:layout_below="@id/bottomStart"
+        android:layout_alignStart="@id/bottomStart"
+        android:layout_alignEnd="@id/bottomEnd"
+        android:background="#BABDBF">
+
+        <!-- Внутри FrameLayout-а работает layout_gravity -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#2196F3"
+            android:padding="10dp"
+            android:text="Center between 4 views"
+            android:textColor="#fff" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fromStartOfOneToEndOfAnother"
+        android:layout_below="@id/parentTopStart"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/betweenTwoViews"
+        android:background="#BABDBF">
+
+        <!-- Внутри FrameLayout-а работает layout_gravity -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#2196F3"
+            android:padding="10dp"
+            android:text="Top center"
+            android:textColor="#fff" />
+
+    </FrameLayout>
+
+    <!-- endregion -->
 </RelativeLayout>
